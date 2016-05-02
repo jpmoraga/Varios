@@ -3,7 +3,10 @@ Mail_Valido <- function(x)
     {
       x <- gsub("unknown","",gsub("\n","",gsub("/","",gsub(",","",gsub(";","",as.character(x))))))
       x <- sub("gmail.cl","gmail.com",as.character(x))
+      x <- sub("gmail.co","gmail.com",as.character(x))
       x <- sub("hotmail.cl","hotmail.com",as.character(x))
+      x <- sub("manquehue.ne","manquehue.net",as.character(x))
+      x <- sub("manquehue.nett","manquehue.net",as.character(x))
       if(length(which(strsplit(as.character(x), '')[[1]]=='@')) != 1){x <- NULL}
       ##if(length(which(strsplit(as.character(x), '')[[1]]=='.')) != 0){x <- NULL}
       ##if(nchar(x) > 80){x <- NULL}
