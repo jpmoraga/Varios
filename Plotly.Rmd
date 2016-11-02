@@ -1,0 +1,20 @@
+---
+title: "Plotly"
+author: "JP"
+date: "2 de noviembre de 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE, echo=FALSE, cache=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Plotly
+November 2, 2016
+
+```{r mtcars, echo=FALSE}
+library(plotly)
+set.seed(100)
+d <- mtcars[, c("mpg","cyl","hp")]
+plot_ly(d, x = ~mpg, y = ~hp, color = ~cyl, size = ~mpg, text = ~paste("cyl: ", cyl))
+```
