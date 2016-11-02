@@ -1,0 +1,45 @@
+---
+title: "Buenos Aires Marathon"
+author: "JP"
+date: "2 de noviembre de 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE, echo =FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## My Buenos Aires MArathon
+
+November 2, 2016
+
+```{r, echo = FALSE}
+library(leaflet)
+  leaflet() %>%
+  addTiles() %>%  
+  # Specify coordinates for of the Marathon
+  addMarkers(lng=-58.44056, lat=-34.54819, popup="Start. Go!!!") %>%  
+  addMarkers(lng=-58.42462, lat=-34.56143, popup=paste(as.character(0/1000),"Km.",sep = " ")) %>%  
+  addMarkers(lng=-58.41365, lat=-34.57539, popup=paste(as.character(2089/1000),"Km.",sep = " ")) %>%  
+  addMarkers(lng=-58.39370, lat=-34.58400, popup=paste(as.character(4268/1000),"Km.",sep = " ")) %>%  
+  addMarkers(lng=-58.38143, lat=-34.59543, popup=paste(as.character(6373/1000),"Km.",sep = " ")) %>%  
+  addMarkers(lng=-58.37050, lat=-34.60294, popup=paste(as.character(8387/1000),"Km.",sep = " ")) %>%  
+  addMarkers(lng=-58.38023, lat=-34.61671, popup=paste(as.character(10256/1000),"Km.",sep = " ")) %>%  
+  addMarkers(lng=-58.37732, lat=-34.63516, popup=paste(as.character(12390/1000),"Km.", "So far, so good!",sep = " ")) %>%
+  addMarkers(lng=-58.36975, lat=-34.65087, popup=paste(as.character(14529/1000),"Km.",sep = " ")) %>%  
+  addMarkers(lng=-58.36158, lat=-34.63971, popup=paste(as.character(16645/1000),"Km.",sep = " ")) %>%  
+  addMarkers(lng=-58.35771, lat=-34.63145, popup=paste(as.character(18753/1000),"Km.",sep = " ")) %>%  
+  addMarkers(lng=-58.35701, lat=-34.62420, popup=paste(as.character(20764/1000),"Km.",sep = " ")) %>%  
+  addMarkers(lng=-58.35531, lat=-34.62024, popup=paste(as.character(22823/1000),"Km.",sep = " ")) %>%  
+  addMarkers(lng=-58.36169, lat=-34.60266, popup=paste(as.character(24924/1000),"Km.",sep = " ")) %>%  
+  addMarkers(lng=-58.36172, lat=-34.60986, popup=paste(as.character(27054/1000),"Km.", "Excellent pace!!!",sep = " ")) %>%  
+  addMarkers(lng=-58.36701, lat=-34.60438, popup=paste(as.character(29085/1000),"Km.",sep = " ")) %>%
+  addMarkers(lng=-58.36724, lat=-34.58646, popup=paste(as.character(31099/1000),"Km.",sep = " ")) %>%  
+  addMarkers(lng=-58.38481, lat=-34.57807, popup=paste(as.character(33236/1000),"Km.",sep = " ")) %>%  
+  addMarkers(lng=-58.40284, lat=-34.57028, popup=paste(as.character(35311/1000),"Km.",sep = " ")) %>%  
+  addMarkers(lng=-58.41561, lat=-34.56898, popup=paste(as.character(37410/1000),"Km.", "Ok... I'm going to die!!",sep = " ")) %>%  
+  addMarkers(lng=-58.43185, lat=-34.55574, popup=paste(as.character(39526/1000),"Km.",sep = " ")) %>%  
+  addMarkers(lng=-58.44051, lat=-34.54832, popup=paste(as.character(41656/1000),"Km.", "I love running!!",sep = " "))
+
+```
+
