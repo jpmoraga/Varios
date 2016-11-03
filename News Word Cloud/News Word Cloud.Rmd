@@ -1,0 +1,41 @@
+---
+title: "Course Project: Shiny Application and Reproducible Pitch"
+author: "JP"
+date: "3 de noviembre de 2016"
+output: ioslides_presentation
+---
+
+
+## News Word Cloud
+
+This was built as part of a deliverable for the course Developing Data Products as part of the Coursera Data Science Specialization.
+
+The app developed for the first part of the assignment demo is avalilable at: 
+
+Source code for ui.R and server.R files are available on the GitHub repo: https://github.com/jpmoraga/Varios/tree/master/ThePress1
+
+
+## Slide with R Output
+
+The data used for this App was downloaded from the Machine Learning repository of the University of California.
+
+- http://archive.ics.uci.edu/ml/machine-learning-databases/00359/NewsAggregatorDataset.zip
+
+To download the data you should run the following code:
+
+```{r Download data, eval=FALSE}
+download.file(
+  
+"http://archive.ics.uci.edu/ml/machine-learning-databases/00359/NewsAggregatorDataset.zip",
+              "YOUR FOLDER"
+)
+
+unzip("NewsAggregatorDataset.zip")
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
